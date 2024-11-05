@@ -3,7 +3,7 @@ new Vue({
     el: '#app',
     methods: {
         openTutorials() {
-            window.location.href = "toturials.html"; // 导航到 toturials.html
+            window.location.href = "tutorials.html"; // 导航到 tutorials.html
         }
     },
     mounted() {
