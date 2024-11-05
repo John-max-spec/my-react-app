@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 30;
+    line-height: 18;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -60,5 +60,5 @@ footer {
     color: white;
     position: relative;
     bottom: 0;
-    width: 50%;
+    width: 100%;
 }
