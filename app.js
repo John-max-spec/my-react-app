@@ -1,15 +1,13 @@
+
 new Vue({
     el: '#app',
     methods: {
-        learnMore() {
-            alert("Learn more about OpenAPI at: https://swagger.io/specification/");
-        },
-        getStarted() {
-            alert("Get started with OpenAPI by visiting: https://swagger.io/tools/open-source/open-api/");
+        openTutorials() {
+            window.location.href = "tutorials.html"; // 导航到 tutorials.html
         }
     },
     mounted() {
-        document.getElementById('learnMoreButton').onclick = this.learnMore;
-        document.getElementById('getStartedButton').onclick = this.getStarted;
+        // 为按钮绑定点击事件
+        document.getElementById('tutorialsButton').onclick = this.openTutorials;
     }
 });
