@@ -1,105 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vue.js Setup Tutorial</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-    }
-    .container {
-      width: 80%;
-      margin: auto;
-      padding: 20px;
-      max-width: 800px;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 20px;
-    }
-    h2 {
-      margin-top: 1em;
-      color: #444;
-    }
-    p {
-      color: #666;
-    }
-    .code-block {
-      background-color: #eee;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      font-family: 'Courier New', Courier, monospace;
-      color: #333;
-    }
-    .image-section img {
-      width: 100%;
-      max-width: 600px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .footer {
-      text-align: center;
-      margin-top: 20px;
-      padding: 10px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAPI Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Vue.js Setup Tutorial</h1>
-
-    <section>
-      <h2>Introduction to Vue.js Editors</h2>
-      <p>When developing with Vue.js, you have many options for code editors. Here are some recommended ones:</p>
-      <ul>
-        <li><strong>Visual Studio Code:</strong> A popular editor with a wide range of extensions.</li>
-        <li><strong>Sublime Text:</strong> Lightweight with Vue.js syntax support.</li>
-        <li><strong>Atom:</strong> Open-source editor with customizable plugins for Vue.js.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Setting Up Node.js</h2>
-      <p>To start, you’ll need to install Node.js, which Vue.js relies on. Download it from <a href="https://nodejs.org/en" target="_blank">nodejs.org</a>.</p>
-      <p>Once installed, open a terminal and verify the installation:</p>
-      <div class="code-block">
-        <code>node -v</code>
-      </div>
-      <p>If a version number appears, Node.js is installed correctly. If not, reinstall or check the system path settings.</p>
-    </section>
-
-    <section>
-      <h2>Setting Up Vue CLI</h2>
-      <p>With Node.js installed, install Vue CLI globally to create Vue.js projects:</p>
-      <div class="code-block">
-        <code>npm install -g @vue/cli</code>
-      </div>
-      <p>Now, create a new Vue.js project:</p>
-      <div class="code-block">
-        <code>vue create my-vue-project</code>
-      </div>
-    </section>
-
-    <section>
-      <h2>Running the Vue Project</h2>
-      <p>After creating the project, navigate to the project folder and start the server:</p>
-      <div class="code-block">
-        <code>cd my-vue-project<br>npm run serve</code>
-      </div>
-      <p>Open the local link provided in the terminal to see your project running in the browser.</p>
-    </section>
-
-    <div class="footer">
-      © 2023 Vue.js Setup Tutoria
+    <div id="app">
+        <header>
+            <h1>OpenAPI Tutorial</h1>
+            <p>Welcome to the OpenAPI tutorial page! Here you will learn about OpenAPI specifications and how to use them effectively.</p>
+        </header>
+        <main>
+            <section>
+                <h2>What is OpenAPI?</h2>
+                <p>OpenAPI is a specification for defining APIs in a standard way.</p>
+                <ul>
+                    <li>Facilitates API documentation.</li>
+                    <li>Enables automation of API-related tasks.</li>
+                    <li>Promotes API discoverability.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Getting Started with OpenAPI</h2>
+                <p>To define an API using OpenAPI, you can use YAML or JSON format.</p>
+                <p>Here’s a simple example of an OpenAPI specification in YAML:</p>
+                <pre>
+<code>openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+paths:
+  /pets:
+    get:
+      summary: List all pets
+      responses:
+        '200':
+          description: A list of pets
+</code>
+                </pre>
+            </section>
+            <section>
+                <h2>Tools for OpenAPI</h2>
+                <p>Here are some popular tools to work with OpenAPI:</p>
+                <ul>
+                    <li><strong>Swagger Editor</strong> - A web-based editor for creating OpenAPI definitions.</li>
+                    <li><strong>Postman</strong> - A powerful tool for testing APIs with OpenAPI support.</li>
+                    <li><strong>Swagger UI</strong> - Generates interactive API documentation from OpenAPI specifications.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 OpenAPI Tutorial</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
